@@ -3,6 +3,24 @@ const User = require('../Models/user');
 
 exports.userController = {
     getUsers(req, res) {
+        if(Object.keys(query).length !== 0){
+            let query = {}
+
+            if (req.query.gender){
+                query.gender = req.query.gender
+            }
+            if (req.query.age){
+                query.age = req.query.age
+            }
+            if (req.query.interest){
+                query.interest = req.query.interest
+            }
+    
+            console.log("req.query.gender");
+            User.find(query)
+                .then(docs => { res.json(docs) })
+                .catch(err => console.log(`Error getting the data from DB: ${err}`));
+        }
         User.find({})
             .then(docs => { res.json(docs) })
             .catch(err => console.log(`Error getting the data from DB: ${err}`));
@@ -13,18 +31,6 @@ exports.userController = {
             .catch(err => console.log(`Error getting the data from DB: ${err}`));
     },
 
-    filterUsers(req, res) {
-        // let query = {}
-
-        // if (req.query.gender){
-        //     query.gender = req.query.gender
-        // }
-
-        console.log("req.query.gender");
-        // User.find(query)
-        //     .then(docs => { res.json(docs) })
-        //     .catch(err => console.log(`Error getting the data from DB: ${err}`));
-    },
 
     addUser(req, res) {
         const { body } = req;
