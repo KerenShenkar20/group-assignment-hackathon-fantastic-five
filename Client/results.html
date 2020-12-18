@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="js/functions.js"></script>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css"/>
+<head>
+    <meta name="referrer" content="strict-origin" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Matches List</title>
+</head>
 
-        <title>Hackathon</title>
-        <!-- Change the name of the html file and the title to something less generic -->
-    </head>
-    <body>
-        <div id="wrapper">
-             The table template will help you 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            
+<body>
+    <h1 style="display:block;text-align:center"><b>Matches List</b></h1><br>
+    <div id="wrapper">
+        <br>
+        <!-- headers -->
+        <div class="container" style="text-align: center;">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h6 style="color: grey;">User A</h5>
+                </div>
+                <div class="col-5">
+                    <h6 style="color: grey;">Mutual Interest</h5>
+                </div>
+                <div class="col">
+                    <h6 style="color: grey;">User B</h5>
+                </div>
+            </div>
         </div>
-    </body>
+
+        <!-- List -->
+        <div class="container" style="text-align: center;">
+            <div class="row align-items-center" style="margin-top: 5px; border:1px solid black">
+
+                <!-- Left User -->
+                <div class="col">
+                    <div class="container" style="text-align: center;">
+                        <div class="row align-items-center"
+                            style="margin-top: 5px; border:1px solid rgb(155, 135, 135)">
+                            <div class="col">
+                                <div class="left-user-avatar">
+                                    <i class="fas fa-camera"></i> <!-- example for avatar, need to delete -->
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <i class="far fa-user"></i>
+                                <div class="left-user-info">
+                                    </i>Saar Pernik, 28 <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MUTUAL INTEREST (Center) -->
+                <div class="col-5" style="background-color:crimson; height:100px">
+                    <i class="fas fa-heart fa-2x"></i>
+                    <span id="interest">Eating Pizza</span>
+                    <i class="fas fa-heart fa-2x"></i>
+                </div>
+
+                <!-- Right User -->
+                <div class="col">
+                    <div class="container" style="text-align: center;">
+                        <div class="row align-items-center"
+                            style="margin-top: 5px; border:1px solid rgb(155, 135, 135)">
+                            <div class="col">
+                                <div id="right-user-avatar"> 
+                                    <i class="fas fa-camera"></i> <!-- example for avatar, need to delete -->
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <i class="far fa-user"></i>
+                                <div class="right-user-info">
+                                    </i>Saar Pernik, 28 <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
 </html>
