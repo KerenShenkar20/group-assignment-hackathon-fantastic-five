@@ -19,107 +19,99 @@
 
 <body>
     <div id="wrapper-p1">
-
-        <form action="results.html" method="GET">
-            <h1>Welcome to <br> Dating in Corona Time</h1>
+        <!-- action="results.html" -->
+        <!-- <form method="GET"> -->
+        <h1>Welcome to <br> Dating in Corona Time</h1>
+        <br>
+        <i class="fas fa-signature"></i>
+        <legend>Full Name </legend>
+        <div class="mb-3">
+            <label class="form-label"></label>
             <br>
-            <i class="fas fa-signature"></i>
-            <legend>Full Name </legend>
-            <div class="mb-3">
-                <label class="form-label"></label>
-                <br>
-                <input type="text" placeholder="Enter Your Full Name" name="fullName" title="You need ' ' between"
-                    required>
-                </label>
-            </div>
-            <i class="far fa-envelope"></i>
-            <div class="mb-3">
-                <legend>Email </legend>
-                <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="email" placeholder="Enter Your Email" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <i class="fas fa-lock"></i>
-            <div class="mb-3">
-                <legend>Password </legend>
-                <label for="exampleInputPassword1" class="form-label"></label>
-                <input type="password" class="form-control" id="exampleInputPassword1"
-                    placeholder="Choose your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <br>
-            <i class="fas fa-snowman"></i>
-            <div class="mb-3">
-                <label>
-                    <legend>Gender </legend>
-                    <input type="radio" name="gender" value="male" checked> Male
-                    <input type="radio" name="gender" value="female"> Female
-                    <input type="radio" name="gender" value="other"> Other
-                </label>
-            </div>
-            <br>
-            <i class="fas fa-hat-cowboy"></i>
-            <div class="mb-3">
-                <label>
-                    <legend>Age </legend>
-                    <select name="age">
-                        <option selected="selected">Choose...</option>
-                        <option value="18-22">18-22</option>
-                        <option value="23-30">23-30</option>
-                        <option value="31-40">31-40</option>
-                        <option value="40+">40+</option>
-                    </select>
-                </label>
-            </div>
-            <br>
-            <i class="fas fa-snowboarding"></i>
-            <div class="mb-3">
-                <fieldset>
-                    <legend>Interests </legend>
-                    <label>Sports
-                        <input type="checkbox" name="interests[]">
-                    </label>
-                    <label> Science
-                        <input type="checkbox" name="interests[]">
-                    </label>
-                    <label> Music
-                        <input type="checkbox" name="interests[]">
-                    </label>
-                    <label> Reading
-                        <input type="checkbox" name="interests[]">
-                    </label>
-                    <label> Computers
-                        <input type="checkbox" name="interests[]">
-                    </label>
-                </fieldset>
-            </div>
-            <i class="fas fa-briefcase"></i>
-            <div class="mb-3">
-                <legend>Job </legend>
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-            </div>
-            <i class="fas fa-location-arrow"></i>
-            <div class="mb-3">
-                <legend>Location</legend>
-                <label for="exampleDataList" class="form-label"></label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-                <datalist id="datalistOptions">
-                    <option value="Raanana">
-                    <option value="Ramat Hashron">
-                    <option value="Tel Aviv">
-                    <option value="Ramat Gan">
-                    <option value="Hod Hashron">
-                    <option value="Herzliya"></option>
-                </datalist>
-            </div>
-            <button type="submit" id="firstPage" class="btn btn-primary">Submit</button>
-        </form>
+            <input type="text" placeholder="Enter Your Full Name" name="fullName" id="fullName"
+                title="You need ' ' between" required>
+            </label>
+        </div>
+        <i class="far fa-envelope"></i>
+        <div class="mb-3">
+            <legend>Email </legend>
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="email" placeholder="Enter Your Email" class="form-control" id="email"
+                aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <i class="fas fa-lock"></i>
+        <!-- <div class="mb-3">
+                        <legend>Password </legend>
+                        <label for="exampleInputPassword1" class="form-label"></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" >
+                    </div> 
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>-->
+        <br>
+        <i class="fas fa-snowman"></i>
+        <div class="mb-3">
+            <label>
+                <legend>Gender </legend>
+                <div id="fullName">
+                    <input type="radio" name="gender" value="Male" checked> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                </div>
+            </label>
+        </div>
+        <br>
+        <i class="fas fa-hat-cowboy"></i>
+        <div class="mb-3">
+            <label>
+                <legend>Age</legend>
+                <select name="age" id="age">
+                    <option value="18-22" selected="selected">18-22</option>
+                    <option value="23-30">23-30</option>
+                    <option value="31-40">31-40</option>
+                    <option value="40+">40+</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <i class="fas fa-snowboarding"></i>
+        <div class="mb-3">
+            <label>
+                <legend>Interests</legend>
+                <select name="interests" id="interests">
+                    <option value="Sports" selected="selected">Sports</option>
+                    <option value="Science">Science</option>
+                    <option value="Reading">Reading</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Music">Music</option>
+                </select>
+            </label>
+        </div>
+        <i class="fas fa-briefcase"></i>
+        <div class="mb-3">
+            <legend>Job</legend>
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="job-form" rows="1"></textarea>
+        </div>
+        <i class="fas fa-location-arrow"></i>
+        <div class="mb-3">
+            <label> 
+                <legend>Location </legend>
+                <select name="Location" id="location">
+                    <option selected="selected">Choose...</option>
+                    <option value="Tel-Aviv">Tel-Aviv</option>
+                    <option value="Ramat-Gan">Ramat-Gan</option>
+                    <option value="Herzilya">Herzilya</option>
+                    <option value="Ramat HaSharon">Ramat HaSharon</option>
+                    <option value="Hod-HaSharon">Hod-HaSharon</option>
+                    <option value="Raanana">Raanana</option>
+                </select>
+            </label>
+        </div>
+        <button type="submit" id="firstPage" class="btn btn-primary">Submit</button>
+        <!-- </form> -->
 
     </div>
 </body>

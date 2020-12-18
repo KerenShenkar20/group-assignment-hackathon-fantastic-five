@@ -1,8 +1,8 @@
 
-// $(function () {
+$(function () {
     // getAllUsers();
     usersOperationsListeners();
-// });
+});
 
 function getAllUsers() {
     $.ajax({
@@ -203,25 +203,36 @@ function hideOperations() {
     $("#input-operation").hide();
 }
 
-function showAllButton() {
-
-}
 
 function usersOperationsListeners() {
 
     $("#firstPage").click(() => {
         user = new Object();
-    if ($("#fullName").val())
-        user.full_name = $("#fullName").val();
-    if ($("#gender").val())
-        user.gender = $("#gender").val();
+        if ($("#fullName").val())
+            user.full_name = $("#fullName").val();
+        if ($("#email").val())
+            user.email = $("#email").val();
 
-    console.log(user);
-    
-    // updateUserById(userId, user);
+        if ($("#age").val())
+            user.age = $("#age").val();
+        if ($("#interests").val())
+            user.interest = $("#interests").val();
+        if ($("#job-form").val())
+            user.job = $("#job-form").val();
+        if ($("#location").val())
+            user.location = $("#location").val();
 
+        const radios = document.getElementsByName('gender');
+        for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked) {
+                user.gender = radios[i].value;
+                break;
+            }
+        }
+
+
+        console.log(user);
     });
-    
 
     //GET
     $("#get-button").click(() => {
