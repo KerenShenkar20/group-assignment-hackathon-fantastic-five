@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const consts = require('./constants');
+const consts = require('./constatns');
 const { DB_HOST, DB_USER, DB_PASS } = consts;
 const url = DB_HOST;
 const options = {
