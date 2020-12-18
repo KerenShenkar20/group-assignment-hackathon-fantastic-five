@@ -3,19 +3,19 @@ const User = require('../Models/user');
 
 exports.userController = {
     getUsers(req, res) {
-        if(Object.keys(req.query).length !== 0){
+        if (Object.keys(req.query).length !== 0) {
             let query = {}
 
-            if (req.query.gender){
+            if (req.query.gender) {
                 query.gender = req.query.gender
             }
-            if (req.query.age){
+            if (req.query.age) {
                 query.age = req.query.age
             }
-            if (req.query.interest){
+            if (req.query.interest) {
                 query.interest = req.query.interest
             }
-    
+
             console.log("req.query.gender");
             User.find(query)
                 .then(docs => { res.json(docs) })
@@ -26,7 +26,7 @@ exports.userController = {
             .catch(err => console.log(`Error getting the data from DB: ${err}`));
     },
     getUser(req, res) {
-        User.findOne({ id: req.params.id  })
+        User.findOne({ id: req.params.id })
             .then(docs => { res.json(docs) })
             .catch(err => console.log(`Error getting the data from DB: ${err}`));
     },
