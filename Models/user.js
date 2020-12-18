@@ -5,7 +5,7 @@ const userSchema = new Schema({
     id: { type: Number },
     full_name: { type: String },
     gender: {type: String },
-    age: {type: Number},
+    age: {type: String},
     location: { type: String },
     interest: { type: String },
     job: {type: String },
