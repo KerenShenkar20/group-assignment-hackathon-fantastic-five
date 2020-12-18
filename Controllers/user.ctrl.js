@@ -14,20 +14,16 @@ exports.userController = {
     },
 
     filterUsers(req, res) {
-        let query = {}
-        if (req.query.job){
-            query.job = req.query.job
-        }
-        if (req.query.gender){
-            query.gender = req.query.gender
-        }
-        if (req.query.email){
-            query.email = req.query.email
-        }
-        console.log(query);
-        User.find(query)
-            .then(docs => { res.json(docs) })
-            .catch(err => console.log(`Error getting the data from DB: ${err}`));
+        // let query = {}
+
+        // if (req.query.gender){
+        //     query.gender = req.query.gender
+        // }
+
+        console.log("req.query.gender");
+        // User.find(query)
+        //     .then(docs => { res.json(docs) })
+        //     .catch(err => console.log(`Error getting the data from DB: ${err}`));
     },
 
     addUser(req, res) {
