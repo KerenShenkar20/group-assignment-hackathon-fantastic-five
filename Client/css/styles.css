@@ -9,9 +9,13 @@ header, main, footer, nav, aside, section, div  {
 
 body {
     font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    margin-top: auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #wrapper {
-    margin: 10px auto;
-    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
 }
