@@ -39,14 +39,14 @@ exports.userController = {
         if (result) {
             res.json(newUser)
         } else {
-            res.status(404).send("Error saving a restaurant");
+            res.status(404).send("Error saving a user");
         }
     },
     updateUser(req, res) {
         const { body } = req;
         User.updateOne({ id: req.params.id }, body)
             .then(docs => { res.json(docs) })
-            .catch(err => console.log(`Error updating restaurant from db: ${err}`));
+            .catch(err => console.log(`Error updating user from db: ${err}`));
     },
     deleteUser(req, res) {
         User.deleteOne({ id: req.params.id })
