@@ -229,8 +229,6 @@ function usersOperationsListeners() {
                 break;
             }
         }
-
-
         console.log(user);
     });
 
