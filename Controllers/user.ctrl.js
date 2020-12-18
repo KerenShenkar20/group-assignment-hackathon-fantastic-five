@@ -20,7 +20,7 @@ exports.userController = {
         //     query.gender = req.query.gender
         // }
 
-        console.log("req.query.gender");
+        console.log(`${req.query.gender}`);
         // User.find(query)
         //     .then(docs => { res.json(docs) })
         //     .catch(err => console.log(`Error getting the data from DB: ${err}`));

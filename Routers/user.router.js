@@ -8,7 +8,6 @@ module.exports = { userRouter };
 
 userRouter.get('/',userController.getUsers);
 userRouter.get('/:id',userController.getUser);
-userRouter.get('/filter',userController.filterUsers);
 userRouter.post('/',userController.addUser);
 userRouter.put('/:id',userController.updateUser);
 userRouter.delete('/:id',userController.deleteUser);
